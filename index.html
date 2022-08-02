@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="upload.css">
+    <link rel="stylesheet" href="preview.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.1">
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <h1 id="title">MEME CREATOR</h1>
+    <div id="main">
+        <div id="upload">
+            <label for="input_file">Wyślij zdjęcie</label>
+            <input type="file" name="input_file" id="input_file" accept=".jpg, .jpeg, .png">
+        </div>
+        <div id="preview_div" class="hide">
+            <div id="text_opts">
+                <div class="wrapper">
+                    <div class="inline">
+                        <label for="font_size">Rozmiar czcionki:</label><input type="number" id="font_size"
+                            name="font_size">
+                    </div>
+                    <div class="inline"><div class="inline">
+                        <label for="bcolor">kolor tła:</label><input type="color" id="bcolor" name="bcolor" value="#000000">
+                    </div>
+                    <div class="inline">
+                        <label for="fcolor">kolor czcionki:</label><input type="color" id="fcolor" name="fcolor" value="#ffffff" >
+                    </div></div>
+                </div>
+                <textarea id="text"
+                    placeholder="Podaj tekst do mema...">Adaś</textarea>
+                <button id="apply">Zastosuj</button>
+                <a id="download" download="image.png"><button>Pobierz</button></a>
+            </div>
+            <div id="preview">
+                <div id="loader_wheel"></div>
+                <img class="hide" alt="zaladowana fotka">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+#upload{
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#upload>label{
+    --border-color: yellow;
+    display: block;
+    cursor: pointer;
+    width: max-content;
+    margin: .5em;
+    padding: .15em .4em;
+
+    border: .25em solid var(--border-color);
+    border-radius: 1em;
+    font-size: 1.2em;
+}
+
+#upload > label:hover{
+    background-color: var(--border-color);
+    color: var(--default-background-color);
+}
+
+#input_file{
+    position: absolute;
+    top:0;
+    opacity: 0;
+    z-index: -1;
+}
