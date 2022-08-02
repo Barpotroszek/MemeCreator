@@ -1,4 +1,4 @@
-#upload{
+#upload {
     position: relative;
     height: 100%;
     display: flex;
@@ -6,7 +6,7 @@
     align-items: center;
 }
 
-#upload>label{
+#upload>label {
     --border-color: yellow;
     display: block;
     cursor: pointer;
@@ -16,17 +16,17 @@
 
     border: .25em solid var(--border-color);
     border-radius: 1em;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
-#upload > label:hover{
+#upload>label:hover {
     background-color: var(--border-color);
     color: var(--default-background-color);
 }
 
-#input_file{
+#input_file {
     position: absolute;
-    top:0;
+    top: 0;
     opacity: 0;
     z-index: -1;
 }
