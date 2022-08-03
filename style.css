@@ -15,8 +15,8 @@
 @media (min-width: 720px) {
     :root {
         --font-size: 1em;
-        --max-img-width: 80%;
-        --max-img-height: 80%;
+        --max-img-width: 87%;
+        --max-img-height: 87%;
     }
 
     #preview_div {

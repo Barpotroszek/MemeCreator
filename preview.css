@@ -34,14 +34,16 @@
 
 #preview {
     position: relative;
-    display: flex;
+    display: grid;
     justify-content: center;
-    align-items: center;
     z-index: 0;
 }
 
+#loader_wheel {
+    display: none;
+}
 .loading #loader_wheel {
-    display: block;
+    display: block !important;
     width: 10em;
     height: 10em;
     border-radius: 50%;
@@ -61,9 +63,18 @@
     }
 }
 
+@media (min-width: 720px) {
+    img{margin: 2em auto;
+    }
+    #preview {
+        height: 100%;
+        align-items: center;
+    }
+}
+
 img {
-    position: absolute;
-    margin: .5em;
+    /* position: absolute; */
+    margin: 1em auto;
     max-width: var(--max-img-width);
     max-height: var(--max-img-height);
     display: block;
