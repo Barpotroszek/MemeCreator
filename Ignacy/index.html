@@ -1,0 +1,56 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Replacer Ignacego</title>
+</head>
+
+<script>
+    function changeText() {
+        const p=document.getElementById("input").value;
+        var odp = "";
+
+        for (var a = 0; a < p.length; a++) {
+            t = p.charAt(a).toUpperCase();
+            // console.log({a, t});
+            if (t === "A")
+                odp += "T";
+            else if (t === "T")
+                odp += "A";
+            else if (t === "G")
+                odp += "C";
+            else if (t === "C")
+                odp += "G";
+            else
+                odp += '_';
+        }
+        document.getElementById("odp").innerText = odp
+    }
+</script>
+
+<style>
+    html{
+        background-color: black;
+        color: white;
+    }
+
+    body{
+        display: grid;
+        justify-items: center;
+        justify-content: center;
+        padding: 2em;
+    }
+</style>
+
+<body>
+    <div>
+    <div>
+        <input id="input" placeholder="Podaj tekst do zmiany...">
+        <button onclick="changeText()">Zamień</button>
+    </div>
+    <p id="odp">...</p>
+</div></body>
+
+</html>
